@@ -1,0 +1,1089 @@
+{
+	"info": {
+		"_postman_id": "62cf0a19-b32e-474e-9dff-4b7ccaf08358",
+		"name": "dat-ve-xe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tài Khoản",
+			"item": [
+				{
+					"name": "Thêm (ADD)",
+					"item": [
+						{
+							"name": "thêm tài khoản ADMIN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\": \"ADMIN\",\r\n    \"username\": \"mrkaito\",\r\n    \"password\": \"123456789\",\r\n    \"name\": \"Nguyễn Đức Sáng\",\r\n    \"sdt\": \"0988787865\",\r\n    \"cmnd\": \"123456789\",\r\n    \"email\": \"kaito@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/signup/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"signup",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "thêm tài khoản ADMIN (1)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\": \"ADMIN\",\r\n    \"username\": \"ducsang\",\r\n    \"password\": \"123456789\",\r\n    \"name\": \"The Kaito\",\r\n    \"sdt\": \"0987899812\",\r\n    \"cmnd\": \"1223114124\",\r\n    \"email\": \"kaito69@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/signup/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"signup",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "thêm tài khoản nhà xe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\": \"NHAXE\",\r\n    \"username\": \"sangsang\",\r\n    \"password\": \"123456789\",\r\n    \"tenNhaXe\": \"Hữu Thanh\",\r\n    \"sdt\": \"0978765478\",\r\n    \"diChi\": \"614/65 quận 9, TP HCM\",\r\n    \"moTaNgan\": \"nhà xe giá rẻ\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/signup/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"signup",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "thêm tài khoản nhà xe (1)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\": \"NHAXE\",\r\n    \"username\": \"abccba\",\r\n    \"password\": \"123456789\",\r\n    \"tenNhaXe\": \"Chính Hữu\",\r\n    \"sdt\": \"0977682332\",\r\n    \"diChi\": \"60/59 quận 2, TP HCM\",\r\n    \"moTaNgan\": \"nhà xe sinh viên\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/signup/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"signup",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "thêm tài khoản USER",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"role\": \"USER\",\r\n    \"username\": \"blueskin\",\r\n    \"password\": \"123456789\",\r\n    \"name\": \"Nguyễn Sáng\",\r\n    \"sdt\": \"0978287221\",\r\n    \"cmnd\": \"111222333444\",\r\n    \"email\": \"blueskin@gmail.com\",\r\n    \"diaChi\": \"222/1 quận 3 TP HCM\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/signup/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"signup",
+										"add"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Lấy dữ liệu (GET)",
+					"item": [
+						{
+							"name": "lấy tất cả các admin",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/admin/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "lấy tất cả các user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/user/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "lấy tất cả các nhà xe",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/nhaxe/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"nhaxe",
+										"all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sửa (PUT)",
+					"item": [
+						{
+							"name": "Sửa thông tin admin hợp lệ (PUT)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Nguyen Duc Binh\",\r\n    \"email\": \"kaito@gmail.com\",\r\n    \"sdt\": \"0988787865\",\r\n    \"cmnd\": \"123456789\",\r\n    \"username\": \"mrkaito\",\r\n    \"password\": \"123456789\",\r\n    \"trangThaiHoatDong\": \"ACTIVE\",\r\n    \"role\": \"ADMIN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/admin/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"admin",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login và Đổi MK",
+					"item": [
+						{
+							"name": "Login tài khoản admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"mrkaito\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"ADMIN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Đổi MK Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjcyMTA3NDQxLCJleHAiOjE2NzIxMDgzNDF9.c9vANIxVGTzu2BaGOVw1DTPSYNSm2lx6faAAMRedvfjO8MBfwTbdk1zxv6WpGGQQCjmpG3PHEOqMds6qz9fIqQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/taikhoan/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"taikhoan",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login tài khoản user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjcyOTAzNjM3LCJleHAiOjE2NzI5MDQ1Mzd9.2qMiVqqsDSTyHlefOwgCEcyRQ-MMOrX8oOCf5ao0dpl2_dRspEpZ9-yNEMnb8oR17mhYqKbSHvdPeOAAL_L7eQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"blueskin\",\r\n    \"password\": \"123456789\",\r\n    \"role\": \"USER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login tài khoản nhaxe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"sangsang\",\r\n    \"password\": \"123456789\",\r\n    \"role\": \"NHAXE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Update tài khoản",
+					"item": [
+						{
+							"name": "Update tài khoản user (vai trò admin)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjcyMTA5ODE5LCJleHAiOjE2NzIxMTA3MTl9.0_Ef0VjKShW26qQimcMkzjP6EEskIrdxJn96ugfmqFi7Mehg2YLJ-bbz4ymgpAsZjmBJ_LjEwLr1vweCzqYIJA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"hoTen\": \"Nguyễn Đức Sáng\",\r\n    \"cmnd\": \"0123456789\",\r\n    \"sdt\": \"0978103469\",\r\n    \"email\": \"sang@gmail.com\",\r\n    \"diaChi\": \"Tân Định, Bắc Tân Uyên, Bình Dương\",\r\n    \"role\": \"USER\",\r\n    \"trangThaiHoatDong\": \"INACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/user/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update tài khoản user (vai trò user)",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjcyMTEwNzM4LCJleHAiOjE2NzIxMTE2Mzh9.VPoQPtZJbL6Vfr36x8dxJb1PGXSdscJ3IpvhFkqf_Yvj1gyKTGEYU2zNfpJSE-LFUQS8-jFmFKnGCxKM5vA3HQ",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"hoTen\": \"Nguyễn Đức Sáng\",\r\n    \"cmnd\": \"125678900\",\r\n    \"sdt\": \"0982728161\",\r\n    \"email\": \"tester@gmail.com\",\r\n    \"diaChi\": \"Tân Định, Bắc Tân Uyên, Bình Dương\",\r\n    \"role\": \"USER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/user/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bến Xe",
+			"item": [
+				{
+					"name": "Thêm (ADD)",
+					"item": [
+						{
+							"name": "thêm bến xe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tenBenXe\": \"Bến Xe MIền Tây\",\r\n    \"tinhThanh\": \"TP HCM\",\r\n    \"diaChiChiTiet\": \"524/28 đường 99 quận 12\",\r\n    \"trangThai\": \"INACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/benxe/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"benxe",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "thêm bến xe (1)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tenBenXe\": \"Bến Xe Miền Đông\",\r\n    \"tinhThanh\": \"TP HCM\",\r\n    \"diaChiChiTiet\": \"đường 80 quận Bình Thạnh\",\r\n    \"trangThai\": \"ACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/benxe/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"benxe",
+										"add"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Lấy dữ liệu (GET)",
+					"item": [
+						{
+							"name": "Lấy bến xe theo id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/benxe/benxeid/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"benxe",
+										"benxeid",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lấy tất cả bến xe trang user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/benxe/all-admin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"benxe",
+										"all-admin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Lấy tất cả bến xe trang admin",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/benxe/all-admin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"benxe",
+										"all-admin"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Vé Xe",
+			"item": [
+				{
+					"name": "Thêm",
+					"item": [
+						{
+							"name": "Thêm vé xe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjcyNzQ4MDU3LCJleHAiOjE2NzI3NDg5NTd9.8t6lj6xBz1Hl1bK8BzLU81V8T062cYIK-FN0xfpJJqjw9E1TKkfYungZt2DAHLV7LtABGmiyMYH4FfPTmS2R0g",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"soGhe\": [2,3,4],\r\n    \"ngayDat\": \"2021-10-15\",\r\n    \"ngayNhan\": \"2021-10-15\",\r\n    \"hinhThucThanhToan\": \"ONLINE\",\r\n    \"tuyenXeId\": \"1\",\r\n    \"userId\": \"2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/vexe/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"vexe",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Chỉnh sửa vé xe",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI0IiwiaWF0IjoxNjcyNzQ4NzMwLCJleHAiOjE2NzI3NDk2MzB9.Ney5B32GxSsGoa8zXM8BQ4Xhn8CZw7fw9e2rl92cCrgYIMGI_vwXVCHwD8zjGQhUjuHU-8Fx4XzgyT20_QRARA",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"soGhe\": [5],\r\n    \"ngayNhan\": \"2021-10-15\",\r\n    \"hinhThucThanhToan\": \"ONLINE\",\r\n    \"trangThai\": \"ACTIVE\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/vexe/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"vexe",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hàng hóa",
+			"item": [
+				{
+					"name": "Thêm hàng hóa by user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjcyMTE5MjcyLCJleHAiOjE2NzIxMjAxNzJ9.cg6gmFzbRI4j5ZJJRHqWK-N29ZgcDkPqLuLQA5eY1LKHYuIRntPdxNVhLfHBbhYM6fVFa4UKY7lUpPrhU4omDQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"canNang\": \"55\",\r\n    \"tenNguoiNhan\": \"Nguyen Van A\",\r\n    \"sdtNguoiNhan\": \"0989989282\",\r\n    \"email\": \"thetest@gmail.com\",\r\n    \"tuyenXeId\": \"1\",\r\n    \"userId\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hanghoa/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hanghoa",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update hàng hóa role USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjcyMTM0MjYzLCJleHAiOjE2NzIxMzUxNjN9.sRtPUoUbYCP8nKswlop4lX2xY1HQTZxfoVPfdEGdmdpm3GwvqIgURzdueZtBtFqp09BLklj-b04qSoFHp9b5Jw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"canNang\": \"40\",\r\n    \"gia\": \"400000\",\r\n    \"trangThai\": \"ACTIVE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hanghoa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hanghoa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Thống kê",
+			"item": [
+				{
+					"name": "Thống kê số sao trung bình theo tuyến xe id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjcyMTQxNTExLCJleHAiOjE2NzIxNDI0MTF9.EbcEU_YE53CXFqRLCKGjY0g0Gq5EmXw8ncSxk33T0_iJQwsBuesmiz48wO6Lxps9iCWzHvNItCLSu7v6NO4kEg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"blueskin\",\r\n    \"password\": \"123456789\",\r\n    \"role\": \"USER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/thongke/nhaxe/sao-trung-binh/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"thongke",
+								"nhaxe",
+								"sao-trung-binh",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thống kê số sao theo tuyến xe id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiaWF0IjoxNjcyMTQ0MDUzLCJleHAiOjE2NzIxNDQ5NTN9._fFU8RQCKKuPa18Lx-qMBylsNYr3j2SbR3E9Ck8f11skJt1BOkbfdWuM_hZzQITQUiJFA3bm_Ii1X1Dappso8A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/thongke/nhaxe/so-sao/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"thongke",
+								"nhaxe",
+								"so-sao",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lấy số sao trung bình của tất cả nhà xe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/thongke/nhaxe/sao-trung-binh/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"thongke",
+								"nhaxe",
+								"sao-trung-binh",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tuyễn Xe",
+			"item": [
+				{
+					"name": "Thêm tuyến xe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ngayDi\": \"2021-10-15\",\r\n    \"gioDi\": \"19:00:00\",\r\n    \"thoiGianHanhTrinh\": \"3h00\",\r\n    \"giaVe\": \"150000\",\r\n    \"trangThai\": \"ACTIVE\",\r\n    \"tenBenXeDi\": \"Bến Xe Miền Đông\",\r\n    \"tenBenXeDen\": \"Bến Xe MIền Tây\",\r\n    \"bienSoXe\": \"61C abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/tuyenxe/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tuyenxe",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thống kê admin số đơn",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjcyODgwOTU1LCJleHAiOjE2NzI4ODE4NTV9.z7LNa5Pw7InAoKR7UCd8noueCygmTHq0P9T_H0bCWqZFHhQcF0n0mGuHveRP1yH9cfQY0U__uVz6MWfjye6_jQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"year\": \"2021\",\r\n    \"month\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/thongke/admin/so-don",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"thongke",
+								"admin",
+								"so-don"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thống kê admin doanh thu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjcyODkxODEzLCJleHAiOjE2NzI4OTI3MTN9.8O2kRGOi679aR365oARdUpEYbjNT2uHMzlWAmoG9kSIA_1QS01tTVFmNTxWtmm5rda6cJ6G8eX4LNCisa5fLdg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhaXeId\": \"3\",\r\n    \"year\": \"2021\",\r\n    \"month\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/thongke/nhaxe/loai-xe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"thongke",
+								"nhaxe",
+								"loai-xe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Thống kê nhà xe theo tuyến xe",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWF0IjoxNjcyOTAzNjM3LCJleHAiOjE2NzI5MDQ1Mzd9.2qMiVqqsDSTyHlefOwgCEcyRQ-MMOrX8oOCf5ao0dpl2_dRspEpZ9-yNEMnb8oR17mhYqKbSHvdPeOAAL_L7eQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhaXeId\": \"3\",\r\n    \"year\": \"2021\",\r\n    \"month\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/thongke/nhaxe/tuyenxe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"thongke",
+								"nhaxe",
+								"tuyenxe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
